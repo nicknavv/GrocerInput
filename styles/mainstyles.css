@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+/* $ASS Variables */
 /* Reset Styles */
 * {
   margin: 0;
@@ -6,5 +8,148 @@
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
+}
+
+/* Global Styles */
+body {
+  color: #202020;
+}
+
+/* Section Styles */
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+  background-image: url(/Images/veggies.jpg);
+}
+
+#main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Box Class Styles */
+.input-box {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Form Styles */
+.form {
+  position: relative;
+  width: 100%;
+}
+
+.form h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form p {
+  margin-bottom: 20px;
+}
+
+.form a {
+  color: #202020;
+}
+
+/* Input Box Styles */
+.inputBx {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputBx input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  padding: 8px 10px;
+  padding-left: 35px;
+  border-radius: 6px;
+  color: #202020;
+  font-size: 1rem;
+}
+
+.inputBx input::-webkit-input-placeholder {
+  color: #686868;
+}
+
+.inputBx input:-ms-input-placeholder {
+  color: #686868;
+}
+
+.inputBx input::-ms-input-placeholder {
+  color: #686868;
+}
+
+.inputBx input::placeholder {
+  color: #686868;
+}
+
+.inputBx i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #202020;
+}
+
+.inputBx input[type="submit"] {
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #202020;
+  color: white;
+  width: 100%;
+  padding: 8px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.inputBx input[type="submit"]:active {
+  top: 2px;
+}
+
+/* Label Styles */
+.remember {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=mainstyles.css.map */
