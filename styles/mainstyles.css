@@ -27,8 +27,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  -webkit-animation: animate 5s linear infinite;
-          animation: animate 5s linear infinite;
   background-image: url(/Images/veggies.jpg);
 }
 
@@ -47,7 +45,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -55,23 +53,23 @@ body {
 }
 
 /* Form Styles */
-.form {
+.form-box {
   position: relative;
   width: 100%;
 }
 
-.form h2 {
+.form-box h2 {
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
-.form p {
+.form-box p {
   margin-bottom: 20px;
 }
 
-.form a {
+.form-box a {
   color: #202020;
 }
 
@@ -143,5 +141,20 @@ body {
   display: inline-block;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.seperator {
+  border-top: 1px solid #7a7a7a;
+  position: relative;
+  margin: 25px 0 10px;
+  text-align: center;
+}
+
+.text-seperator {
+  background: #ffffff;
+  padding: 0 0.5em;
+  position: relative;
+  color: #202020;
+  top: -0.7rem;
 }
 /*# sourceMappingURL=mainstyles.css.map */

@@ -6,3 +6,4 @@
 - SASS styling :ribbon:
 - Customizing HTML inputs :art:
 - User feedback (form validation, JS functions) :white_check_mark:
+- Sending data to a server :computer:

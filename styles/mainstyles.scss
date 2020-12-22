@@ -27,7 +27,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  animation: animate 5s linear infinite;
   background-image: url(/Images/veggies.jpg);
 }
 
@@ -41,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
@@ -49,7 +48,7 @@ body {
 
 /* Form Styles */
 
-.form {
+.form-box {
   position: relative;
   width: 100%;
 
@@ -125,4 +124,19 @@ body {
   display: inline-block;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.seperator {
+  border-top: 1px solid #7a7a7a;
+  position: relative;
+  margin: 25px 0 10px;
+  text-align: center;
+}
+
+.text-seperator {
+  background: #ffffff;
+  padding: 0 0.5em;
+  position: relative;
+  color: #202020;
+  top: -0.7rem;
 }

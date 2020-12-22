@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-            User Input Form
-
-            Version 1.0
-        -->
-    <title>Grocer Query | Web app</title>
+    <title>Grocer Input | Login</title>
     <meta charset="UTF-8" />
     <meta name="author" content="Nick Navarro" />
     <meta
       name="description"
       content="Users input their favorite grocery items and get personalized results"
     />
-    <meta name="keywords" content="Grocery Store, Food, Meals, Groceries" />
-    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Grocery store, grocery store near me, food, meals, groceries"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/mainstyles.css" />
     <link
       rel="stylesheet"
@@ -26,11 +24,10 @@
   </head>
   <body>
     <section id="main">
-      <div class="nav"></div>
       <div class="input-box">
-        <div class="form">
+        <div class="form-box">
           <h2>Sign-in</h2>
-          <form id="login">
+          <form id="login" action="#" method="POST">
             <div class="inputBx">
               <input type="text" autofocus placeholder="Username" />
               <i class="fas fa-user"></i>
@@ -47,10 +44,16 @@
             </div>
           </form>
           <p>Forgot <a href="#">Password?</a></p>
-          <p>Need an <a href="#">Account?</a></p>
+          <div class="seperator">
+            <span class="text-seperator">or</span>
+          </div>
+          <div class="inputBx">
+            <button type="button" class="account-create" href="#">
+              CREATE ACCOUNT
+            </button>
+          </div>
         </div>
       </div>
-      <div class="overlay"></div>
     </section>
   </body>
 </html>
