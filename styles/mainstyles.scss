@@ -28,6 +28,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-image: url(/Images/veggies.jpg);
+  background-size: cover;
 }
 
 /* Box Class Styles */
@@ -117,14 +118,37 @@ body {
   }
 }
 
-/* Label Styles */
+/* Remeber me checkbox Styles */
 
 .remember {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
   cursor: pointer;
+  user-select: none;
+
+  /* Hide the borowser's default checkbox */
+  .remember input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #c4c4c4;
+  }
 }
+
+/* Seperator Styles */
 
 .seperator {
   border-top: 1px solid #7a7a7a;
@@ -149,9 +173,13 @@ body {
   border: 0;
   color: white;
   transition: all 0.2s ease-in-out;
-  padding: 8px 10px;
+  padding: 10px 10px;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 6px;
+
+  &:active {
+    border: 0;
+  }
 }

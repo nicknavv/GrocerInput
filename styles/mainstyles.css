@@ -28,6 +28,7 @@ body {
           align-items: center;
   min-height: 100vh;
   background-image: url(/Images/veggies.jpg);
+  background-size: cover;
 }
 
 /* Box Class Styles */
@@ -135,14 +136,39 @@ body {
   top: 2px;
 }
 
-/* Label Styles */
+/* Remeber me checkbox Styles */
 .remember {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Hide the borowser's default checkbox */
+  /* Create custom checkbox */
 }
 
+.remember .remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.remember .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #c4c4c4;
+}
+
+/* Seperator Styles */
 .seperator {
   border-top: 1px solid #7a7a7a;
   position: relative;
@@ -167,10 +193,14 @@ body {
   color: white;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 8px 10px;
+  padding: 10px 10px;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 6px;
+}
+
+.account-create:active {
+  border: 0;
 }
 /*# sourceMappingURL=mainstyles.css.map */
