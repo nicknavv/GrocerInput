@@ -145,7 +145,34 @@ body {
     width: 20px;
     background-color: #eee;
     border: 1px solid #c4c4c4;
+
+    /* On mouse-over, add a grey background-color */
+    &:hover {
+      background: #ccc;
+    }
   }
+}
+
+/* When the checkbox is checked, create a green background */
+
+.remember input:checked ~ .checkmark {
+  background-color: rgb(19, 155, 19);
+}
+
+/* Show the checkmark when checked */
+.remember input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.remember .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 /* Seperator Styles */
