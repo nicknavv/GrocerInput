@@ -140,3 +140,18 @@ body {
   color: #202020;
   top: -0.7rem;
 }
+
+.account-create {
+  position: relative;
+  width: 100%;
+  background: rgb(19, 155, 19);
+  display: block;
+  border: 0;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
