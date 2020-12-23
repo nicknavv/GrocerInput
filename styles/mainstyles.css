@@ -70,10 +70,6 @@ body {
   margin-bottom: 20px;
 }
 
-.form-box a {
-  color: #202020;
-}
-
 /* Input Box Styles */
 .inputBx {
   position: relative;
@@ -238,15 +234,35 @@ body {
 .return {
   position: relative;
   width: 100%;
-  background: #202020;
   display: block;
   border: 0;
-  color: white;
+  color: #ffffff;
+  background: #202020;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 10px 10px;
+  padding: 10px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
+
+.next {
+  position: relative;
+  width: 100%;
+  display: block;
+  border: 0;
+  color: #ffffff;
+  background: #139b13;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
   letter-spacing: 2px;
   border-radius: 6px;
 }

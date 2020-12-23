@@ -63,10 +63,6 @@ body {
   p {
     margin-bottom: 20px;
   }
-
-  a {
-    color: $textclr;
-  }
 }
 
 /* Input Box Styles */
@@ -218,14 +214,33 @@ body {
 .return {
   position: relative;
   width: 100%;
-  background: #202020;
   display: block;
   border: 0;
-  color: white;
+  color: #ffffff;
+  background: #202020;
   transition: all 0.2s ease-in-out;
-  padding: 10px 10px;
+  padding: 10px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
+
+.next {
+  position: relative;
+  width: 100%;
+  display: block;
+  border: 0;
+  color: #ffffff;
+  background: rgb(19, 155, 19);
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
   letter-spacing: 2px;
   border-radius: 6px;
 }
