@@ -231,6 +231,10 @@ body {
   border-radius: 6px;
 }
 
+.forgot {
+  margin-bottom: 20px;
+}
+
 .return {
   position: relative;
   width: 100%;
@@ -247,6 +251,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   border-radius: 6px;
+  margin-top: 20px;
 }
 
 .next {
@@ -265,5 +270,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   border-radius: 6px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=mainstyles.css.map */
