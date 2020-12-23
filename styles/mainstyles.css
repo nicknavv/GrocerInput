@@ -129,7 +129,8 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .inputBx input[type="submit"]:active {
@@ -139,6 +140,8 @@ body {
 /* Remeber me checkbox Styles */
 [type="checkbox"] {
   opacity: 0;
+  margin-left: -15px;
+  margin-top: 10px;
 }
 
 [type="checkbox"] + label {
@@ -232,7 +235,19 @@ body {
   border-radius: 6px;
 }
 
-.account-create:active {
+.return {
+  position: relative;
+  width: 100%;
+  background: #202020;
+  display: block;
   border: 0;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=mainstyles.css.map */
