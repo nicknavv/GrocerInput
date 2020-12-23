@@ -120,59 +120,64 @@ body {
 
 /* Remeber me checkbox Styles */
 
-.remember {
+[type="checkbox"] {
+  opacity: 0;
+}
+
+[type="checkbox"] + label {
   position: relative;
-  display: block;
-  margin-bottom: 30px;
+  padding-left: 25px;
   cursor: pointer;
-  user-select: none;
-
-  /* Hide the borowser's default checkbox */
-  .remember input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  /* Create custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border: 1px solid #c4c4c4;
-
-    /* On mouse-over, add a grey background-color */
-    &:hover {
-      background: #ccc;
-    }
-  }
+  display: inline-block;
 }
 
-/* When the checkbox is checked, create a green background */
-
-.remember input:checked ~ .checkmark {
-  background-color: rgb(19, 155, 19);
+[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  outline: 1px solid #ccc;
+  background: #fff;
 }
 
-/* Show the checkmark when checked */
-.remember input:checked ~ .checkmark:after {
-  display: block;
+[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  outline: none;
+  background: rgb(19, 155, 19);
 }
 
-/* Style the checkmark/indicator */
-.remember .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url(/Images/checkmark.png);
+  background-size: contain;
+  transform: scake(1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+[type="checkbox"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url(/Images/checkmark.png);
+  background-size: contain;
+  transform: scale(0);
+  opacity: 0;
 }
 
 /* Seperator Styles */
