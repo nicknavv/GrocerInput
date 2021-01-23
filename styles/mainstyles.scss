@@ -253,3 +253,27 @@ body {
   margin-bottom: 40px;
   margin-top: 20px;
 }
+
+/* Create account section */
+[type="radio"] {
+  opacity: 0;
+}
+
+[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 30px;
+}
+
+[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  left: 0;
+  top: 0;
+  height: 18px;
+  border-radius: 100%;
+  border: 2px solid green;
+}
